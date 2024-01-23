@@ -1,0 +1,126 @@
+Pesquisa Git e Github
+
+
+1-Oque é o Git e qual é a sua principal função no controle de versão de código fonte
+O Git é um projeto de código aberto maduro e com manutenção ativa desenvolvido em 2005 por Linus Torvalds.
+Um número impressionante de projetos de software depende do Git para controle de versão, incluindo projetos comerciais e de código-fonte aberto.
+
+
+2-Como podemos criar um novo repositorio Git em um projeto existente no seu sistema local
+Para criar um novo repositório, você vai usar o comando git init . git init é um comando único que você usa durante a configuração inicial de um novo repositório. A execução desse comando cria um novo subdiretório . git no diretório de trabalho atual.
+
+
+3-Qual a diferença entre "git add" e "git commit" no contexto do git 
+Git Add significa Adicionar, ou seja, você pode adicionar um arquivo qualquer. Exemplo: git add nomedomeuarquivoaqui. 
+Já em git commit é muito importante, pois indica as alterações que você fez no seu projeto. Ou seja, o commit é a realização de um conjunto de mudanças, alterações que você realizou em seu projeto.
+
+
+4-Explique o proposito do comando "git push" e quando voce o utilizará
+O Git push é um comando que possibilita que as alterações da sua máquina local sejam enviadas para uma máquina remota.
+O comando git push é usado para gravar em um repositório remoto.
+
+
+5-Oque são branches no Git e por que são uteis em um projeto de desenvolvimento
+Um branch no Git é simplesmente um ponteiro móvel para um desses commits. O nome do branch padrão no Git é master.
+No Git é uma linha de desenvolvimento independente que permite que você trabalhe em um conjunto de alterações separado do código principal (normalmente chamado de "branch principal" ou "branch mestre", que muitas vezes é chamado de "main".
+
+
+6-Como podemos verificar o status atual do repositorio local no Git
+O comando git status exibe as condições do diretório de trabalho e da área de staging.
+Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git.
+
+
+7-Explique oque é um conflito de merge no Git e como voce resolveria esse problema
+Os conflitos de merge ocorrem quando alterações concorrentes são feitas na mesma linha de um arquivo ou quando uma pessoa edita um arquivo e outra pessoa exclui o mesmo arquivo. Para obter mais informações.
+Você só pode resolver conflitos de merge no GitHub causados por alterações concorrentes na linha.
+Para todos os outros tipos de conflito de merge, você deve resolver o conflito localmente na linha de comando.
+
+
+8-Como o git se diferencia do github em termos de funcionalidade
+O Github é uma “rede social dev” em que é possível armazenar e compartilhar projetos de desenvolvimento de software. O Git é um sistema de controle de versão de arquivos; em outras palavras, é responsável por guardar o histórico de alterações sempre que alguém modificar algum arquivo que está sendo monitorado por ele.
+
+
+9-Qual a diferença entre um repositorio publico e privado no Github
+Projetos públicos: qualquer um pode ver, forkar e baixar o código fonte. Projetos privados: apenas os usuários que você liberar terão acesso ao código.
+
+
+10-Como podemos realizar o processo de clonagem (clone) de um repositorio do GIthub para o seu computador local
+Para clonar um repositório localmente, use o subcomando repo clone . Substitua o parâmetro repository pelo nome do repositório.
+Digite git clone e cole a URL já copiada. Pressione ENTER para criar seu clone local.
+
+
+11-Oque são Pull Requests no Github e qual é o seu proposito no desenvolvimento colaborativo
+Uma pull request é uma proposta para mesclar as alterações de um branch em outro. Em uma pull request, os colaboradores podem revisar e discutir o conjunto de alterações proposto antes de integrá-las à base de código principal.
+
+
+12-Como podemos adicionar um arquivo .gitignore e qual é a sua finalidade
+Você pode criar um arquivo .gitignore no diretório raiz do repositório para informar o Git de quais arquivos e diretórios devem ser ignorados durante um commit.
+Listar os arquivos e pastas que deseja ignorar.
+
+
+13-Explique oque é fork no Github e em que situações voce pode querer realizar um fork de um repositorio 
+Os forks geralmente são usados para iterar ideias ou alterações antes de serem propostas de volta para o repositório upstream, como em projetos código aberto ou quando um usuário não tem acesso de gravação ao repositório upstream. 
+
+
+14-Como podemos visualizar o historico de commits em um repositorio Git
+Quando o Git mostra o histórico de um só arquivo, ele simplifica o histórico omitindo os commits que não alteraram o arquivo. Em vez de analisar cada commit para decidir se ele alterou o arquivo, o Git omitirá um branch inteiro se esse branch, quando mesclado, não tiver afetado o conteúdo final do arquivo.
+
+
+15-Qual é a função do comando "git pull" e quando ele deve ser utilizando no desenvolvimento colaborativo com o Git e Github
+O comando git pull serve para recuperar e baixar o conteúdo de um repositório remoto e atualizar o repositório local assim que ele for baixado. Isso é muito útil em fluxos de trabalho de colaboração que precisam mesclar alterações upstream remotas no repositório local.
+
+
+
+Fontes:
+https://www.atlassian.com/br/git/tutorials/what-is-git#:~:text=O%20Git%20%C3%A9%20um%20projeto,e%20de%20c%C3%B3digo%2Dfonte%20aberto.
+
+https://www.atlassian.com/br/git/tutorials/setting-up-a-repository#:~:text=Para%20criar%20um%20novo%20reposit%C3%B3rio,no%20diret%C3%B3rio%20de%20trabalho%20atual.
+
+https://www.atlassian.com/br/git/tutorials/saving-changes/git-commit#:~:text=Os%20instant%C3%A2neos%20com%20commit%20podem,s%C3%A3o%20armazenadas%20em%20uma%20confirma%C3%A7%C3%A3o.
+
+https://blog.betrybe.com/git/git-push/
+
+https://git-scm.com/book/pt-br/v2/Branches-no-Git-Branches-em-poucas-palavras#:~:text=Um%20branch%20no%20Git%20%C3%A9,novo%20commit%2C%20ele%20avan%C3%A7a%20automaticamente.
+
+https://www.atlassian.com/br/git/tutorials/inspecting-a-repository
+
+https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
+
+https://www.alura.com.br/artigos/o-que-e-git-github#:~:text=O%20Github%20%C3%A9%20uma%20%E2%80%9Crede,est%C3%A1%20sendo%20monitorado%20por%20ele.
+
+https://pt.stackoverflow.com/questions/156311/todos-podem-ver-meus-projetos-no-github#:~:text=Projetos%20p%C3%BAblicos%3A%20qualquer%20um%20pode,liberar%20ter%C3%A3o%20acesso%20ao%20c%C3%B3digo.
+
+https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository
+
+https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+
+https://www.freecodecamp.org/portuguese/news/gitignore-explicado-o-que-e-o-gitignore-e-como-adiciona-lo-ao-seu-repositorio/
+
+https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
+
+https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Vendo-o-hist%C3%B3rico-de-Commits#:~:text=A%20ferramenta%20mais%20b%C3%A1sica%20e,%C3%A9%20o%20comando%20git%20log%20.&text=Por%20padr%C3%A3o%2C%20sem%20argumentos%2C%20git,commit%20mais%20recente%20aparece%20primeiro.
+
+https://www.locaweb.com.br/blog/temas/codigo-aberto/git-pull-aprenda-a-usar-o-comando/#:~:text=O%20comando%20git%20pull%20serve,upstream%20remotas%20no%20reposit%C3%B3rio%20local.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
